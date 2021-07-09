@@ -1,5 +1,5 @@
 resource "kubernetes_namespace" "this" {
-  count = (var.namespace != "default" ? 1 : 0)
+  count = (var.create_namespace == true ? 1 : 0)
 
   metadata {
     name = var.namespace

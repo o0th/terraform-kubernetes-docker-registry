@@ -4,6 +4,12 @@ variable "namespace" {
   description = "namespace"
 }
 
+variable "create_namespace" {
+  type        = bool
+  description = "create or not namespace"
+  default     = true
+}
+
 variable "crt" {
   type        = string
   description = "docker registry tls.crt"
