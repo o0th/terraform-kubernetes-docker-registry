@@ -15,8 +15,8 @@ resource "kubernetes_secret" "cert" {
   type = "kubernetes.io/tls"
 
   data = {
-    "tls.crt" = base64encode(var.crt)
-    "tls.key" = base64encode(var.key)
+    "tls.crt" = var.crt
+    "tls.key" = var.key
   }
 }
 
@@ -29,7 +29,7 @@ resource "kubernetes_secret" "auth" {
   type = "Opaque"
 
   data = {
-    "htpasswd" = base64encode(var.auth)
+    "htpasswd" = var.auth
   }
 }
 
