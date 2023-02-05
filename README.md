@@ -28,17 +28,10 @@ module "docker-registry" {
 }
 ```
 
-Certificate
-
-```bash
-openssl genrsa -out tls.key 4096
-openssl req -new -x509 -text -key tls.key -out tls.cert
-```
-
 Htpasswd file
 
 ```bash
-htpasswd -c auth <username>
+htpasswd -B auth <username>
 ```
 
 Terraform
