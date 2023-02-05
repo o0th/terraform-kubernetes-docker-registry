@@ -9,7 +9,7 @@ Terraform module which deploys a docker-registry on kubernetes
 
 ## Usage
 
-Configuration
+Without storage
 
 ```terraform
 provider "kubernetes" {
@@ -25,6 +25,25 @@ module "docker-registry" {
   key = file("${path.module}/tls.key")
 
   auth = file("${path.module}/auth")
+}
+```
+
+With storage
+
+```terraform
+module "docker" {
+  source = "../terraform-kubernetes-docker-registry"
+
+  namespace        = kubernetes_namespace.docker.metadata[0].name
+  create_namespace = false
+
+  crt = file("tls.cert")
+  key = file("tls.key")
+
+  auth = file("auth")
+
+  storage = "pvc"
+  pvc     = kubernetes_persistent_volume_claim.docker.metadata[0].name
 }
 ```
 
