@@ -2,7 +2,7 @@
 <div align="center">
   <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
   <h2 style="font: monospace;">terraform-kubernetes-docker-registry</h2>
-  ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/o0th/terraform-kubernetes-docker-registry?style=for-the-badge)
+  <img src="https://img.shields.io/github/v/tag/o0th/terraform-kubernetes-docker-registry?style=for-the-badge" />
 </div>
 
 Terraform module which deploys a docker-registry on kubernetes
