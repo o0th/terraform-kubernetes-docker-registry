@@ -6,7 +6,7 @@
 
 <div style="display: flex; align-items: center;">
   <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
-  <h1>terraform-kubernetes-docker-registry</h1>
+  <span>terraform-kubernetes-docker-registry<span>
 </div>
 
 Terraform module which deploys a docker-registry on kubernetes
