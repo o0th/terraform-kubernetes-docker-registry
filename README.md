@@ -39,6 +39,10 @@ module "docker-registry" {
 With storage
 
 ```terraform
+provider "kubernetes" {
+  config_path = "~/.kube/config"
+}
+
 module "docker" {
   source = "../terraform-kubernetes-docker-registry"
 
