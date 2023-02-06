@@ -44,7 +44,7 @@ provider "kubernetes" {
 }
 
 module "docker" {
-  source = "../terraform-kubernetes-docker-registry"
+  source = "github.com/o0th/terraform-kubernetes-docker-registry"
 
   create_namespace = false
 
