@@ -1,5 +1,7 @@
 # terraform-kubernetes-docker-registry
 
+[![Stack](https://skillicons.dev/icons?i=raspberrypi,kubernetes)](https://skillicons.dev)
+
 Terraform module which deploys a docker-registry on kubernetes
 
 ## Requirements
