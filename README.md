@@ -15,9 +15,9 @@ Terraform module which deploys a docker-registry on kubernetes
 * Terraform 0.13+
 * Kubernetes cluster
 
-## Usage
+## Configuration
 
-Without storage
+Basic
 
 ```terraform
 provider "kubernetes" {
@@ -42,7 +42,6 @@ With storage
 module "docker" {
   source = "../terraform-kubernetes-docker-registry"
 
-  namespace        = kubernetes_namespace.docker.metadata[0].name
   create_namespace = false
 
   crt = file("tls.cert")
@@ -55,17 +54,8 @@ module "docker" {
 }
 ```
 
-Htpasswd file
+Generate htpasswd file
 
 ```bash
 htpasswd -B auth <username>
 ```
-
-Terraform
-
-```bash
-terraform init
-terraform plan
-terraform apply
-```
-
