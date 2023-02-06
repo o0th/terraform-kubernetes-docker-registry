@@ -1,8 +1,9 @@
-
+<br/>
 <div align="center">
   <img src="https://img.shields.io/badge/module-terraform--kubernetes--docker--registry-blue?style=for-the-badge&logo=terraform" />
   <img src="https://img.shields.io/github/v/tag/o0th/terraform-kubernetes-docker-registry?style=for-the-badge" />
 </div>
+<br/>
 
 Terraform module which deploys a docker-registry on kubernetes
 
