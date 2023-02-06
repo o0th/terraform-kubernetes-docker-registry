@@ -1,9 +1,9 @@
 
-<p align="center">
+<div align="center">
   <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
   <p>terraform-kubernetes-docker-registry</p>
   <p>spanTerraform module which deploys a docker-registry on kubernetes</p>
-</p>span
+</div>span
 
 Terraform module which deploys a docker-registry on kubernetes
 
