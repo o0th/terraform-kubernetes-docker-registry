@@ -1,6 +1,12 @@
-# terraform-kubernetes-docker-registry
+<br /><br />
+<div align="center">
+  <img src="https://img.shields.io/badge/module-terraform--kubernetes--docker--registry-blue?style=for-the-badge&logo=terraform" />
+  <img src="https://img.shields.io/github/v/tag/o0th/terraform-kubernetes-docker-registry?style=for-the-badge" />
+</div>
+<br /><br />
 
-[![Stack](https://skillicons.dev/icons?i=raspberrypi,kubernetes)](https://skillicons.dev)
+
+## Description
 
 Terraform module which deploys a docker-registry on kubernetes
 
@@ -9,9 +15,9 @@ Terraform module which deploys a docker-registry on kubernetes
 * Terraform 0.13+
 * Kubernetes cluster
 
-## Usage
+## Configuration
 
-Without storage
+Basic
 
 ```terraform
 provider "kubernetes" {
@@ -33,10 +39,13 @@ module "docker-registry" {
 With storage
 
 ```terraform
+provider "kubernetes" {
+  config_path = "~/.kube/config"
+}
+
 module "docker" {
   source = "../terraform-kubernetes-docker-registry"
 
-  namespace        = kubernetes_namespace.docker.metadata[0].name
   create_namespace = false
 
   crt = file("tls.cert")
@@ -49,17 +58,8 @@ module "docker" {
 }
 ```
 
-Htpasswd file
+Generate htpasswd file
 
 ```bash
 htpasswd -B auth <username>
 ```
-
-Terraform
-
-```bash
-terraform init
-terraform plan
-terraform apply
-```
-
