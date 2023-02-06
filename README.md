@@ -1,4 +1,8 @@
-# [![Stack](https://skillicons.dev/icons?i=kubernetes)](https://skillicons.dev) terraform-kubernetes-docker-registry
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=kubernetes">
+  <h1>terraform-kubernetes-docker-registry</h1>
+</p>
 
 Terraform module which deploys a docker-registry on kubernetes
 
