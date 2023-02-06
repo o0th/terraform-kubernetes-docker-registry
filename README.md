@@ -1,13 +1,8 @@
 
 <p align="center">
   <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
-  <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" />
+  <pre>terraform-kubernetes-docker-registry</pre>
 </p>
-
-<div style="display: flex; align-items: center;">
-  <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
-  <span>terraform-kubernetes-docker-registry<span>
-</div>
 
 Terraform module which deploys a docker-registry on kubernetes
 
