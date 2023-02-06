@@ -25,9 +25,8 @@ provider "kubernetes" {
 }
 
 module "docker-registry" {
-  source = "github.com/o0th/terraform-kubernetes-docker-registry"
-
-  namespace = "docker"
+  source    = "github.com/o0th/terraform-kubernetes-docker-registry"
+  namespace = "docker-registry"
 
   crt = file("${path.module}/tls.crt")
   key = file("${path.module}/tls.key")
@@ -44,9 +43,8 @@ provider "kubernetes" {
 }
 
 module "docker" {
-  source = "github.com/o0th/terraform-kubernetes-docker-registry"
-
-  create_namespace = false
+  source    = "github.com/o0th/terraform-kubernetes-docker-registry"
+  namespace = "docker-registry"
 
   crt = file("tls.cert")
   key = file("tls.key")
