@@ -1,6 +1,7 @@
 
 <p align="center">
   <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
+  <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" />
 </p>
 
 Terraform module which deploys a docker-registry on kubernetes
